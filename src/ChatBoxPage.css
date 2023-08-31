@@ -1,0 +1,104 @@
+/* ChatBoxPage.css */
+
+/* Style for the chat box page container */
+.chat-box-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  /* Style for the top bar */
+  .top-bar {
+    background-color: #0a0a13;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  /* Style for the chat body */
+  .chat-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 20px;
+    /* background-color: aqua; */
+    border: 7px solid #0a0a0a;
+    border-radius: 20px;
+    background-image: url('./images/logo.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Style for individual messages in the chat body */
+  .message {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    width: 70%;
+  }
+  .sent {
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: left;
+    background-color: #19d7e1;
+    width: 50%;
+  }
+  
+  .received {
+    /* align-self: flex-start; */
+    display: flex;
+    justify-content: right;
+    background-color: #21d81e;
+    width: 50%;
+  }
+  
+  /* .sender {
+    align-self: flex-end;
+    background-color: #ae1140;
+    font-weight: bold;
+    justify-content: right;
+  } */
+  
+  .message-text {
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Style for the bottom input area */
+  .bottom-input {
+    display: flex;
+    align-items: center;
+    background-color: #e4e5e7;
+    padding: 8px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #0a0a0a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #11c33a;
+  }
+  
